@@ -41,7 +41,7 @@ class _CustomersState extends State<Customers> {
             return CutomerDetails(state.customer, context, size);
           } else if (state is CustomerErrorState) {
             return Center(
-              child: Text('Somthing Went wrong'),
+              child: Text('${state.error}'),
             );
           }
           return Center(

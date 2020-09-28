@@ -56,7 +56,7 @@ class _SingleCustomerState extends State<SingleCustomer> {
               );
             } else if (state is CustomerorderErrorState) {
               return Center(
-                child: Text('Somthing Went wrong'),
+                child: Text('${state.error}'),
               );
             }
             return Center(
