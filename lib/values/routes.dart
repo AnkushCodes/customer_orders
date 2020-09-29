@@ -5,4 +5,6 @@ class RoutesName {
   static const String oreders = '/orders';
   static const String single_order = '/order';
   static const String order_specific = '/orderspecific';
+
+  static const String order_table = '/ordertable';
 }

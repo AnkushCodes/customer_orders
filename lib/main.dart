@@ -1,12 +1,11 @@
 import 'package:customer_order/bloc/customer_bloc/customers_bloc.dart';
 import 'package:customer_order/bloc/customer_orders_bloc/customerorders_bloc.dart';
-import 'package:customer_order/models/customer_order.dart';
 import 'package:customer_order/router_genrator.dart';
 import 'package:customer_order/screens/dashboard.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-
 import 'bloc/order_details_bloc/ordersdetail_bloc.dart';
+import 'bloc/order_table/ordertable_bloc.dart';
 
 void main(List<String> args) {
   runApp(Home());
@@ -23,8 +22,8 @@ class Home extends StatelessWidget {
         BlocProvider<CustomerordersBloc>(
           create: (context) => CustomerordersBloc(),
         ),
-        BlocProvider<OrdersdetailBloc>(
-          create: (context) => OrdersdetailBloc(),
+        BlocProvider<OrdertableBloc>(
+          create: (context) => OrdertableBloc(),
         ),
       ],
       child: MaterialApp(

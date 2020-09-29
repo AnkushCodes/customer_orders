@@ -1,6 +1,7 @@
 import 'package:customer_order/screens/common/orderdetail_widget.dart';
 import 'package:customer_order/screens/customer/customers.dart';
 import 'package:customer_order/screens/customer/single_customer.dart';
+import 'package:customer_order/screens/order_table/order_table_screen.dart';
 import 'package:customer_order/screens/orders/orderDetailsScreen.dart';
 import 'package:customer_order/values/routes.dart';
 import 'package:flutter/cupertino.dart';
@@ -28,6 +29,9 @@ class RoureGenrator {
 
       case RoutesName.order_specific:
         return CupertinoPageRoute(builder: (_) => OrderSpecific(args));
+
+      case RoutesName.order_table:
+        return CupertinoPageRoute(builder: (_) => OrderTable());
     }
   }
 }
