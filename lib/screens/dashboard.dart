@@ -33,6 +33,11 @@ class _DashboardState extends State<Dashboard> {
                       Navigator.pushNamed(context, RoutesName.oreders);
                     },
                     child: CardTile("Orders", Colors.blue)),
+                GestureDetector(
+                    onTap: () {
+                      Navigator.pushNamed(context, RoutesName.oreders);
+                    },
+                    child: CardTile("Order Table", Colors.purple)),
               ],
             )
           ],
